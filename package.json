@@ -1,10 +1,26 @@
 {
   "name": "nodejs-physijs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Node.js version of physijs",
   "dependencies": {
     "socket.io": "^1.4.6"
   },
-  "author": "Jonas Gehring",
+  "files": [
+      "package.json",
+      "README",
+      "nodejs"
+  ],
+  "main": "main.js",
+  "contributors": [
+      {
+          "name" : "Jonas Gehring",
+          "email" : "g.jjoe64@googlemail.com",
+          "url" : "http://www.jjoe64.com"
+      },
+      {
+          "name": "Gary Weiss",
+          "email": "garyweiss74@googlemail.com"
+      }
+  ],
   "license": "Apache-2.0"
 }
