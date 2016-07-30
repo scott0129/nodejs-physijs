@@ -1,7 +1,7 @@
 var NodePhysijs = {
-    THREE: require('./libs/three.js'),
-    Ammo: require('./libs/ammo.js'),
-    Physijs: require('./libs/physi.js')(THREE, Ammo)
+    THREE: require('./nodejs/libs/three'),
+    Ammo: require('./nodejs/libs/ammo'),
+    Physijs: require('./nodejs/libs/physi')
 };
 
 module.exports = NodePhysijs;
