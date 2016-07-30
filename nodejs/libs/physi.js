@@ -477,14 +477,14 @@ module.exports = function(THREE, Ammo) {
 
 		//this._worker = new Worker( Physijs.scripts.worker || 'physijs_worker.js' );
 		//this._worker.transferableMessage = this._worker.webkitPostMessage || this._worker.postMessage;
-		
+
 		this._worker = require('./physijs_worker.js')(workerToSceneMessageHandler, Ammo);
 		var _worker = this._worker;
 		this._worker.postMessage = function(x) {
 			_worker.sceneToWorkerMessageHandler({data:x});
 		};
 		this._worker.transferableMessage = this._worker.postMessage;
-		
+
 		this._materials = {};
 		this._objects = {};
 		this._vehicles = {};
@@ -516,8 +516,8 @@ module.exports = function(THREE, Ammo) {
 			if ( object === undefined ) {
 				continue;
 			}
-			
-			console.log(data[offset+2])
+
+			// console.log(data[offset+2])
 
 			if ( object.__dirtyPosition === false ) {
 				object.position.set(
@@ -1408,4 +1408,3 @@ module.exports = function(THREE, Ammo) {
 
 	return Physijs;
 }
-
