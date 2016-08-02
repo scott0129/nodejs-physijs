@@ -1,7 +1,7 @@
 {
   "name": "nodejs-physijs",
-  "version": "0.1.4",
-  "description": "A Node.js version of physijs",
+  "version": "0.1.5",
+  "description": "the physijs physics engine, running server-side on nodejs",
   "dependencies": {
     "socket.io": "^1.4.6"
   },
@@ -9,6 +9,12 @@
       "package.json",
       "README",
       "nodejs"
+  ],
+  "keywords": [
+      "physijs",
+      "threejs",
+      "three",
+      "physics"
   ],
   "main": "main.js",
   "contributors": [
@@ -22,5 +28,6 @@
           "email": "garyweiss74@googlemail.com"
       }
   ],
+  "repository": "namel/nodejs-physijs",
   "license": "Apache-2.0"
 }
