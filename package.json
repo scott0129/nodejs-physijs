@@ -1,6 +1,6 @@
 {
   "name": "nodejs-physijs",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "the physijs physics engine, running server-side on nodejs",
   "dependencies": {
     "socket.io": "^1.4.6"
